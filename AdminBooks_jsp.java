@@ -2,7 +2,7 @@
 public class AdminBooks_jsp extends HttpJspBase {
 
 //
-// x123412
+// x12
 //
 //   Filename: Common.jsp
 //   Generated with CodeCharge  v.1.2.0
