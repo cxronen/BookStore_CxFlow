@@ -44,7 +44,7 @@ jobs:
         filter_severity: high, medium, low
         scanners: sast
         bug_tracker: Sarif
-        params: --namespace=${{ github.repository_owner }} --repo-name=${{ github.event.repository.name }} --branch=${{ github.ref }}
+        params: --namespace=${{ github.repository_owner }} --repo-name=${{ github.event.repository.name }} --branch=${{ github.ref }} --severity=High&severity=Medium
     - name: Upload SARIF file
       uses: github/codeql-action/upload-sarif@v1
       with:
