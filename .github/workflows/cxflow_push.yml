@@ -40,6 +40,7 @@ jobs:
         #checkmarx_password: General123!
         #checkmarx_client_secret: 014DF517-39D1-4453-B7B3-9930C563627C
         break_build: false
+        filter-severity: high, medium, low
         scanners: sast
         bug_tracker: Sarif
         params: --namespace=${{ github.repository_owner }} --repo-name=${{ github.event.repository.name }} --branch=${{ github.ref }}
